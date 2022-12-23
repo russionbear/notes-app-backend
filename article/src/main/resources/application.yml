@@ -1,0 +1,13 @@
+server:
+  port: 8083
+
+
+spring: #springboot的配置
+  datasource: #定义数据源
+    url: jdbc:mysql://localhost:3306/test # 没加timezone
+    username: root
+    password: tedu
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

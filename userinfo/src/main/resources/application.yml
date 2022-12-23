@@ -1,0 +1,33 @@
+server:
+  port: 8081
+
+spring: #springboot的配置
+  datasource: #定义数据源
+    url: jdbc:mysql://localhost:3306/test # 没加timezone
+    username: root
+    password: tedu
+    # 其他什么的好像可以不用配置，加了driver-class 编辑器会提示这步是多余的
+
+#mybatis:
+#  # spring boot集成mybatis的方式打印sql
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+#spring:
+#  application:
+#    name: gateway
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: user_info
+#          uri: lb://user-info # http://localhost:8082 # lb://user_info
+#          predicates:
+#            - Path=/**
+#            #- Method=GET
+#
+#  main:
+#    web-application-type: reactive

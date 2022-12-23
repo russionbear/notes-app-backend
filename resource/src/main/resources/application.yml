@@ -1,0 +1,14 @@
+server:
+  port: 8082
+
+
+spring: #springboot的配置
+  datasource: #定义数据源
+    url: jdbc:mysql://localhost:3306/test # 没加timezone
+    username: root
+    password: tedu
+
+
+note:
+  dir: E:/workspace/notes-app/notesapp-backend/resource/target/note
+
